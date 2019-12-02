@@ -71,16 +71,16 @@ html {
   top: 0;
   background: rgba(0, 0, 0, 0.25);
 }
-.home-desc {
+.header-desc {
   height: 100%;
   font-family:
 }
-.home-desc h1 {
+.header-desc h1 {
   font-weight: 600;
   font-size: 3rem;
   color: #fff;
 }
-.home-desc p {
+.header-desc p {
   font-weight: 300;
   color: #fff;
 }
@@ -193,4 +193,29 @@ html {
     right: 25px;
     display: none;
     opacity: 0.6;
+}
+
+/*--- rg ---*/
+.rg-header {
+  background-image: url(../img/rg-header.jpeg);
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/*--- projects ---*/
+.projects-header {
+  background-image: url(../img/projects-header.jpg);
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.projects a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 600;
 }
