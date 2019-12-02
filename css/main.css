@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background: #fafafa;
+  font-family: 'Raleway', sans-serif;
+}
+/* or use the jquery stuff */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/*--- navigation bar ---*/
+/* removed bc have the shadow to divide the navbar from content
+.navbar {
+  border-bottom: 1px solid #9a9a9a;
+}*/
+
+.nav-link,
+.navbar-brand {
+  cursor: pointer;
+}
+.logo {
+  height: 32px;
+}
+.navbar-toggler {
+  border: none;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.dropdown-menu {
+  background:#F8F9FA;
+  border: none;
+}
+.dropdown-item {
+  color: #7C7C7D;
+}
+.dropdown-item:hover {
+  color: #000;
+}
+
+/*---  header landing page ---*/
+.header {
+  background-image: url(../img/header.jpeg);
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  /* to make it look cool?
+  background-attachment: fixed;
+  */
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.home-desc {
+  height: 100%;
+  font-family:
+}
+.home-desc h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  color: #fff;
+}
+.home-desc p {
+  font-weight: 300;
+  color: #fff;
+}
+.transbox {
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.5;
+  padding-top: 15px;
+}
+.home-social-list {
+  list-style: none;
+  font-size: 17px;
+}
+.home-social-list a {
+  color: #fff;
+}
+
+/*--- about me ---*/
+.about-img {
+  background-image: url(../img/portrait.jpeg);
+  background-size: cover;
+  color: rgba(0, 0, 0, 0);
+}
+@media (max-width: 48rem) {
+  .about-img {
+    height: 50vh;
+  }
+}
+.about {
+  background-color: #555;
+  color: #fff;
+}
+.about a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*--- experience ---*/
+.experience a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 600;
+}
+.experience-logo img {
+  width: 13vw;
+  min-width: 130px;
+	height: auto;
+  padding-bottom: 1em;
+}
+@media (max-width: 48rem) {
+  .experience-logo img {
+    width: 130px;
+    height: auto;
+  }
+}
+
+/*--- portfolio ---*/
+.portfolio {
+  background-color: #555;
+  color: #fff;
+}
+.portfolio-desc {
+  text-align: center;
+  position: absolute;
+  width: 92%;
+  bottom: 24px;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+@media (min-width: 65rem) {
+  .portfolio-desc {
+    transform: translateY(90%);
+    transition: ease-in-out 250ms;
+  }
+  .portfolio-item:hover .portfolio-desc {
+    transform:translateY(0%);
+    transition: ease-in-out 250ms;
+  }
+}
+
+/*--- contact ---*/
+.contact a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*--- footer ---*/
+.footer {
+  background-color: #ededed;
+  color: #636669;
+}
+.footer-social-list {
+  list-style: none;
+  font-size: 27px;
+  text-align: right;
+}
+.footer-social-list a {
+  color: #636669;
+}
+@media (max-width: 48rem) {
+  .footer-social-list {
+    text-align: left;
+  }
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    opacity: 0.6;
+}
