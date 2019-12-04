@@ -197,7 +197,7 @@ html {
 
 /*--- rg ---*/
 .rg-header {
-  background-image: url(../img/rg-header.jpeg);
+  background-image: url(../img/header-rg.jpeg);
   height: 100vh;
   min-height: 500px;
   background-size: cover;
@@ -207,7 +207,7 @@ html {
 
 /*--- projects ---*/
 .projects-header {
-  background-image: url(../img/projects-header.jpg);
+  background-image: url(../img/header-projects.jpg);
   height: 100vh;
   min-height: 500px;
   background-size: cover;
@@ -218,4 +218,79 @@ html {
   color: #212529;
   text-decoration: none;
   font-weight: 600;
+}
+
+/*--- travel ---*/
+.travel-header {
+  height: 30vh;
+}
+.travel-title {
+  font-weight: 700;
+  font-size: 55px;
+}
+.travel-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.travel-photo{
+  display: inline;
+  margin-right: 1.5vw;
+  height: 40vw;
+  width: auto;
+/* more rounded corners*/
+  /*   border-radius: 0.625vw;  */
+}
+.city-athens {
+  font-weight: 700;
+  background: url(../img/travel/travel-athens1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-budapest {
+  font-weight: 700;
+  background: url(../img/travel/travel-budapest1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-vienna {
+  font-weight: 700;
+  background: url(../img/travel/travel-vienna1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-london {
+  font-weight: 700;
+  background: url(../img/travel/travel-london1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-nyc {
+  font-weight: 700;
+  background: url(../img/travel/travel-nyc1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-seattle {
+  font-weight: 700;
+  background: url(../img/travel/travel-seattle1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-vancouver {
+  font-weight: 700;
+  background: url(../img/travel/travel-vancouver1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-toronto {
+  font-weight: 700;
+  background: url(../img/travel/travel-toronto1.jpg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
+}
+.city-waterloo {
+  font-weight: 700;
+  background: url(../img/travel/travel-waterloo1.jpeg) center / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0.1);
 }
