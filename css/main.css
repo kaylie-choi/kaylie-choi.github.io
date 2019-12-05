@@ -73,7 +73,6 @@ html {
 }
 .header-desc {
   height: 100%;
-  font-family:
 }
 .header-desc h1 {
   font-weight: 600;
@@ -198,18 +197,38 @@ html {
 /*--- rg ---*/
 .rg-header {
   background-image: url(../img/header-rg.jpeg);
-  height: 100vh;
-  min-height: 500px;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.rg-about {
+  background-color: #555;
+  color: #fff;
+}
+.rg-scroll {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.rg-photo{
+  display: inline;
+  margin-right: 1.5vw;
+  height: 30vw;
+  width: auto;
+/* more rounded corners*/
+  /*   border-radius: 0.625vw;  */
+}
+.rg-video {
+  color: #212529;
+}
+.rg-video:hover {
+  color: #7C7C7D;
 }
 
 /*--- projects ---*/
 .projects-header {
   background-image: url(../img/header-projects.jpg);
-  height: 100vh;
-  min-height: 500px;
+  height: 75vh;
   background-size: cover;
   background-position: center;
   position: relative;
