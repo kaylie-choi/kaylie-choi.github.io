@@ -136,6 +136,14 @@ html {
     height: auto;
   }
 }
+  /*   show more  */
+  #module a.collapsed:after {
+    content: '+ Show More';
+  }
+
+  #module a:not(.collapsed):after {
+    content: '- Show Less';
+  }
 
 /*--- portfolio ---*/
 .portfolio {
