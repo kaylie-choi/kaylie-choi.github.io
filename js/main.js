@@ -54,3 +54,22 @@ $(document).ready(function(){
 			return false;
 		});
 });
+
+
+
+// console greeting
+if (typeof console === 'object') {
+	console.log (
+		'\n' +
+		'Hi there :) Thanks for visiting my website!  \n' +
+		'I hope you\'ve enjoyed! \n' +
+
+		"		   ___ \n" +
+		"		__/_  `.  .-----. \n" +
+		"		\\_,` | \\-'  /   )`-') \n" +
+		"		   ) `-‘    \\  ((`-' \n" +
+		"	   ___/  ,    .'7 /| \n" +
+		"	  (_,___/...-` (_/_/ \n" +
+		'\n'
+	);
+}
