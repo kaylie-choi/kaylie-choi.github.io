@@ -20,6 +20,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://kit.fontawesome.com/61240bb50e.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
 
 
 <!--======== NAVIGATION BAR ========-->
@@ -261,11 +263,81 @@
 <section id="contact">
   <div class="contact py-5">
     <div class="container">
-      <h2>let's get in touch.</h2>
-      <br>
-      <p>Feel free to email me at
-        <a href="mailto:k33choi@uwaterloo.ca">k33choi@edu.uwaterloo.ca</a>
-      </p>
+      <div class="row">
+
+        <!-- intro -->
+        <div class="col-md-6">
+          <h2>let's get in touch.</h2>
+          <p>Feel free to email me at
+            <a href="mailto:k33choi@uwaterloo.ca">k33choi@edu.uwaterloo.ca</a>
+          </p>
+        </div>
+        <!-- form -->
+        <div class="col-md-6">
+          <form class="contact-form" method="post" action="contact.php" role="form">
+            <div class="messages">
+              <div class="controls">
+
+                <!-- name row-->
+                <div class="row">
+                  <!-- firstname -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Your firstname*" required="required" data-error="Firstname is required">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <!-- lastname -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Your lastname*" required="required" data-error="Lastname is required">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- email row -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Your email*" required="required" data-error="Valid email is required">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- mssg row -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="5" required="required" data-error="Leave a message!"></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                  </div>
+                </div>
+                <br>
+                <!-- disclaimer -->
+                <div class="row">
+                  <div class="col-md-12">
+                      <p class="text-muted">
+                        <strong>*</strong> These fields are required.
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- end of form -->
+
+      </div>
     </div>
   </div>
 </section>
